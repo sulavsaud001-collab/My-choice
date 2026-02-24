@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+2 GPA Calculator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-card">
+        <div class="header">
+            <h1>+2 GPA Calculator</h1>
+            <p>NEB Standard Grading System (2026)</p>
+        </div>
+        
+        <div class="table-header">
+            <span>Subject</span>
+            <span>Theory</span>
+            <span>Practical</span>
+        </div>
+
+        <div id="subject-list">
+            <div class="subject-row"><span>English</span><input type="number" class="t" placeholder="Max 75"><input type="number" class="p" placeholder="Max 25"></div>
+            <div class="subject-row"><span>Nepali</span><input type="number" class="t" placeholder="Max 75"><input type="number" class="p" placeholder="Max 25"></div>
+            <div class="subject-row"><span>Physics</span><input type="number" class="t" placeholder="Max 75"><input type="number" class="p" placeholder="Max 25"></div>
+            <div class="subject-row"><span>Chemistry</span><input type="number" class="t" placeholder="Max 75"><input type="number" class="p" placeholder="Max 25"></div>
+            <div class="subject-row"><span>Mathematics</span><input type="number" class="t" placeholder="Max 75"><input type="number" class="p" placeholder="Max 25"></div>
+            <div class="subject-row computer"><span>Computer Sci.</span><input type="number" class="t" placeholder="Max 50"><input type="number" class="p" placeholder="Max 50"></div>
+        </div>
+
+        <div class="actions">
+            <button onclick="calculateGPA()" class="btn-calc">Calculate GPA</button>
+            <button onclick="window.print()" class="btn-print">Print Result</button>
+        </div>
+        
+        <div id="result-area" class="hidden">
+            <div class="gpa-display">
+                <small>Final GPA</small>
+                <h2 id="gpa-value">0.00</h2>
+            </div>
+            <p id="grade-text"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
